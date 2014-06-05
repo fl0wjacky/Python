@@ -19,7 +19,7 @@ print(Bird.__dict__)
 print(Chicken.__dict__)
 print(summer.__dict__)
 # Python中的属性时分层定义的，比如这里分为object/Bird/Chicken/summer四层。
-# 当我门需要调用某个属性时，Python会一层层向上遍历，直到找到那个属性。
+# 当我们需要调用某个属性时，Python会一层层向上遍历，直到找到那个属性。
 # 不同层中定义个相同属性，Python向上的过程中，会选取先遇到的那个，即较低层的。
 summer.__dict__['age'] = 3
 print summer.__dict__['age']

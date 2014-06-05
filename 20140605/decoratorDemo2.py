@@ -20,3 +20,9 @@ def square_diff(a, b):
 
 print(square_sum(3, 4))
 print(square_diff(3, 4))
+
+# 等效过程
+#	square_sum = decorator(square_sum)
+#	square_sum(3, 4)
+# Python中的变量名和对象是分离的。变量名可以指向任意一个对象。从本质上讲，装饰器起到的就是这样一个重新指向变量名的作用(
+# name binding),让同一个变量名指向一个新返回的可调用对象，从而达到修改可调用对象的目的。 
