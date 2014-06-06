@@ -1,0 +1,10 @@
+#red hat
+yum -y install pip
+pip install xdot
+pip install objgraph
+
+if appear this error:
+	Graph written to /tmp/objgraph-********.dit (* nodes)
+	Graph viewer (xdot) and image renderer (dot) not found, not doing anything else
+
+do:	sudo yum install python-xdot perl-Image-Dot
